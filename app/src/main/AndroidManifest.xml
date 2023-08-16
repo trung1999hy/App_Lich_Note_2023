@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hst.calander">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First_TaptoStart_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseInAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Privacy_Policy_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReminderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HolidayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alarm.AlarmNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alarm.EditAlarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alarm.Preferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.PermissionGrant_Activity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".Alarm.AlarmReceiver"
+            android:process=":remote" />
+        <receiver android:name=".Alarm.BootCompletedReceiver" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

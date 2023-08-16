@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/consent_dailog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:layout_margin="8dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.36">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/consent_icon" />
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#233540"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eu consent for advertising"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#a3a3a3"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="We care about your privacy and data security.\10We keep this app free by showing ads."
+            android:fontFamily="@font/roboto_regular" />
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#233540"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:text="Can we continue to use your data to \10tailor ads for you?"
+            android:fontFamily="@font/roboto_medium" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#a3a3a3"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="You can change your choice anytime for EU Consent in the app settings.Our partners will collect data and use a unique identifier on your device to show you ads."
+            android:fontFamily="@font/roboto_regular" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#4990e8"
+            android:textColorLink="#4990e8"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:id="@+id/txt_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:text="Learn how our partners will collect and use data under our Privacy Policy."
+            android:fontFamily="@font/roboto_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0.34">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/lin_yes"
+            android:background="@drawable/consent_btn_bg"
+            android:layout_width="320dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes, continue to see relevant ads"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/lin_no"
+            android:background="@drawable/consent_btn_bg"
+            android:layout_width="320dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no, see ads that are less relevant"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

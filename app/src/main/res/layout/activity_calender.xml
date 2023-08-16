@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:theme="@style/ToolbarStyle"
+                        android:id="@+id/toolbar"
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="60dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="18dp"
+                                android:textColor="#000000"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:id="@+id/toolbar_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="@string/app_name"
+                                android:fontFamily="@font/roboto_medium" />
+                            <LinearLayout
+                                android:id="@+id/pointView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_radius_18p_white"
+                                android:clickable="true"
+                                android:focusable="true">
+                                <TextView
+                                    android:id="@+id/pointWallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="11dp"
+                                    android:textColor="#000"
+                                    android:paddingRight="8dp"
+                                    android:text="20"/>
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/wallet"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.08">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/monthView"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <ImageView
+                                android:id="@+id/showPreviousMonthBut"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:src="@drawable/ic_baseline_chevron_right_24"
+                                android:layout_centerVertical="true"
+                                android:rotation="180"
+                                app:tint="#74b1db" />
+
+                            <TextView
+                                android:textSize="18dp"
+                                android:textColor="#000000"
+                                android:gravity="center"
+                                android:id="@+id/monthText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="January 2020"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/roboto_regular" />
+
+                            <ImageView
+                                android:id="@+id/showNextMonthBut"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="30dp"
+                                android:src="@drawable/ic_baseline_chevron_right_24"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                app:tint="#74b1db" />
+                        </RelativeLayout>
+
+                        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                            android:id="@+id/compactcalendar_view"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_below="@+id/monthView"
+                            app:compactCalendarCurrentDayBackgroundColor="#28ad90"
+                            app:compactCalendarCurrentDayTextColor="#ffffff"
+                            app:compactCalendarCurrentSelectedDayBackgroundColor="#494358"
+                            app:compactCalendarCurrentSelectedDayTextColor="@color/white"
+                            app:compactCalendarDisplayOtherMonthDays="false"
+                            app:compactCalendarMultiEventIndicatorColor="#fff"
+                            app:compactCalendarOtherMonthDaysTextColor="#c6c6c6"
+                            app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+                            app:compactCalendarTargetHeight="260dp"
+                            app:compactCalendarTextColor="#000000"
+                            app:compactCalendarTextSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Holiday&apos;s / Notes"
+                            android:fontFamily="@font/roboto_medium" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvToday"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="30dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

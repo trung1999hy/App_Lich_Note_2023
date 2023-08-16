@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="BankHoliday">
+        <item>New Year Day.Jan 1, 2019</item>
+        <item>Martin Luther King, Jr Day.Jan 21, 2019</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 18, 2019</item>
+        <item>Memorial Day.May 27, 2019</item>
+        <item>Independence Day.Jul 4, 2019</item>
+        <item>Labor Day.Sep 2, 2019</item>
+        <item>Columbus Day.Oct 14, 2019</item>
+        <item>Veterans Day.Nov 11, 2019</item>
+        <item>Thanksgiving Day.Nov 28, 2019</item>
+        <item>Christmas Day.Dec 25, 2019</item>
+        <item>New Year Day.Jan 1, 2020</item>
+        <item>Martin Luther King, Jr Day.Jan 20, 2020</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 17, 2020</item>
+        <item>Memorial Day.May 25, 2020</item>
+        <item>Independence Day.Jul 4, 2020</item>
+        <item>Labor Day.Sep 7, 2020</item>
+        <item>Columbus Day.Oct 12, 2020</item>
+        <item>Veterans Day.Nov 11, 2020</item>
+        <item>Thanksgiving Day.Nov 27, 2020</item>
+        <item>Christmas Day.Dec 25, 2020</item>
+        <item>New Year Day.Jan 1, 2021</item>
+        <item>Martin Luther King, Jr Day.Jan 18, 2021</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 15, 2021</item>
+        <item>Memorial Day.May 31, 2021</item>
+        <item>Independence Day.Jul 4, 2021</item>
+        <item>Labor Day.Sep 6, 2021</item>
+        <item>Columbus Day.Oct 11, 2021</item>
+        <item>Veterans Day.Nov 11, 2021</item>
+        <item>Thanksgiving Day.Nov 25, 2021</item>
+        <item>Christmas Day.Dec 25, 2021</item>
+        <item>New Year Day.Jan 1, 2022</item>
+        <item>Martin Luther King, Jr Day.Jan 17, 2022</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 21, 2022</item>
+        <item>Memorial Day.May 30, 2022</item>
+        <item>Independence Day.Jul 4, 2022</item>
+        <item>Labor Day.Sep 5, 2022</item>
+        <item>Columbus Day.Oct 10, 2022</item>
+        <item>Veterans Day.Nov 11, 2022</item>
+        <item>Thanksgiving Day.Nov 24, 2022</item>
+        <item>Christmas Day.Dec 25, 2022</item>
+        <item>New Years Day.Jan 2, 2023</item>
+        <item>Martin Luther King Jr Day.Jan 16, 2023</item>
+        <item>Memorial Day.May 29, 2023</item>
+        <item>Independence Day.Jul 4, 2023</item>
+        <item>Labor Day.Sept 4, 2023</item>
+        <item>Veterans Day.Nov 10, 2023</item>
+        <item>Thanksgiving.Nov 23, 2023</item>
+        <item>Christmas Day.Dec 25, 2023</item>
+    </array>
+    <array name="FederalHolidays">
+        <item>New Year Day.Jan 1, 2019</item>
+        <item>Martin Luther King, Jr Day.Jan 21, 2019</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 18, 2019</item>
+        <item>Memorial Day.May 27, 2019</item>
+        <item>Independence Day.Jul 4, 2019</item>
+        <item>Labor Day.Sep 2, 2019</item>
+        <item>Columbus Day.Oct 14, 2019</item>
+        <item>Veterans Day.Nov 11, 2019</item>
+        <item>Thanksgiving Day.Nov 28, 2019</item>
+        <item>Christmas Day.Dec 25, 2019</item>
+        <item>New Year Day.Jan 1, 2020</item>
+        <item>Martin Luther King, Jr Day.Jan 20, 2020</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 17, 2020</item>
+        <item>Memorial Day.May 25, 2020</item>
+        <item>Independence Day.Jul 4, 2020</item>
+        <item>Labor Day.Sep 7, 2020</item>
+        <item>Columbus Day.Oct 12, 2020</item>
+        <item>Veterans Day.Nov 11, 2020</item>
+        <item>Thanksgiving Day.Nov 27, 2020</item>
+        <item>Christmas Day.Dec 25, 2020</item>
+        <item>New Year Day.Jan 1, 2021</item>
+        <item>Martin Luther King, Jr Day.Jan 15, 2021</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 15, 2021</item>
+        <item>Memorial Day.May 31, 2021</item>
+        <item>Independence Day.Jul 4, 2021</item>
+        <item>Labor Day.Sep 6, 2021</item>
+        <item>Columbus Day.Oct 11, 2021</item>
+        <item>Veterans Day.Nov 11, 2021</item>
+        <item>Thanksgiving Day.Nov 25, 2021</item>
+        <item>Christmas Day.Dec 25, 2021</item>
+        <item>New Year Day.Jan 1, 2022</item>
+        <item>Martin Luther King, Jr Day.Jan 17, 2022</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 21, 2022</item>
+        <item>Memorial Day.May 30, 2022</item>
+        <item>Independence Day.Jul 4, 2022</item>
+        <item>Labor Day.Sep 5, 2022</item>
+        <item>Columbus Day.Oct 10, 2022</item>
+        <item>Veterans Day.Nov 11, 2022</item>
+        <item>Thanksgiving Day.Nov 24, 2022</item>
+        <item>Christmas Day.Dec 25, 2022</item>
+        <item>New Years Day.Jan 1, 2023</item>
+        <item>New Years Day (observed).Jan 2, 2023</item>
+        <item>Martin Luther King Day.Jan 16, 2023</item>
+        <item>Presidents Day.Feb 20, 2023</item>
+        <item>Memorial Day.May 29, 2023</item>
+        <item>Juneteenth.Jun 19, 2023</item>
+        <item>Independence Day.Jul 4, 2023</item>
+        <item>Labor Day.Sep 4, 2023</item>
+        <item>Columbus Day.Oct 9, 2023</item>
+        <item>Veterans Day (observed).Nov 10, 2023</item>
+        <item>Veterans Day.Nov 11, 2023</item>
+        <item>Thanksgiving Day.Nov 23, 2023</item>
+        <item>Christmas Day.Dec 25, 2023</item>
+    </array>
+    <string-array name="FestivalHolidays">
+        <item>New Year\'s Day.January, 1</item>
+        <item>Stephen Foster Memorial Day.January, 13</item>
+        <item>Martin Luther King Jr Day.January, 21</item>
+        <item>National Freedom Day.February, 1</item>
+        <item>Groundhog Day.February, 2</item>
+        <item>Chinese New Year.February, 5</item>
+        <item>Valentine\'s Day .February, 14</item>
+        <item>Presidents\' Day.February, 18</item>
+        <item>Shrove Tuesday/Mardi Gras.March, 5</item>
+        <item>St, Patrick\'s Day.March, 17</item>
+        <item>National Vietnam War Veterans Day.March, 29</item>
+        <item>Thomas Jefferson\'s Birthday .April, 13</item>
+        <item>Tax Day.April, 15</item>
+        <item>Easter Sunday.April, 21</item>
+        <item>Take our Daughters and Sons to Work Day.April, 25</item>
+        <item>Law Day.May, 1</item>
+        <item>Loyalty Day.May, 1</item>
+        <item>National Day of Prayer.May, 2</item>
+        <item>Cinco de Mayo.May, 5</item>
+        <item>Mother\'s Day.May, 12</item>
+        <item>Peace Officers Memorial Day.May, 15</item>
+        <item>National Defense Transportation Day.May, 17</item>
+        <item>Armed Forces Day.May, 18</item>
+        <item>National Maritime Day.May, 22</item>
+        <item>Memorial Day .May, 27</item>
+        <item>D-Day.June, 9</item>
+        <item>Flag Day.June, 14</item>
+        <item>Father\'s Day .June, 16</item>
+        <item>American Eagle Day.June, 20</item>
+        <item>Independence Day. July, 4</item>
+        <item>National Korean War Veterans Armistice Day .July, 27</item>
+        <item>Parents\' Day.July, 28</item>
+        <item>Purple Heart Day.August, 7</item>
+        <item>National Aviation Day.August, 19</item>
+        <item>Labor Day.September, 2</item>
+        <item>Carl Garner Federal Lands Cleanup Day.September, 7</item>
+        <item>National Grandparents Day .September, 8</item>
+        <item>Patriot Day.September, 11</item>
+        <item>Constitution Day and Citizenship Day .September, 17</item>
+        <item>National POW/MIA Recognition Day .September, 20</item>
+        <item>Gold Star Mother\'s Day.September, 29</item>
+        <item>Child Health Day.October, 7</item>
+        <item>Columbus Day.October, 14</item>
+        <item>White Cane Safety Day.October, 15</item>
+        <item>Halloween.October, 31</item>
+        <item>Veterans Day.November, 11</item>
+        <item>Thanksgiving Day.November, 28</item>
+        <item>Black Friday.November, 29</item>
+        <item>Cyber Monday.December, 2</item>
+        <item>Pearl Harbor Remembrance Day.December, 7</item>
+        <item>Pan American Aviation Day.December, 17</item>
+        <item>Wright Brothers Day.December, 17</item>
+        <item>Christmas Eve.December, 24</item>
+        <item>Christmas Day.December, 25</item>
+        <item>New Year\'s Eve.December, 31</item>
+    </string-array>
+    <array name="Genral_Holidays">
+        <item>New Year Day.Jan 1, 2019</item>
+        <item>Epiphany.Jan 6, 2019</item>
+        <item>Lee-Jackson Day.Jan 18, 2019</item>
+        <item>Martin Luther King.Jan 21, 2019</item>
+        <item>Jr Day/Robert E Lee Birthday.Jan 19, 2019</item>
+        <item>Inauguration Day.Jan 21, 2019</item>
+        <item>Rosa Parks Day.Feb 4, 2019</item>
+        <item>Lincoln Birthday.Feb 12, 2019</item>
+        <item>Mardi Gras Day.Feb 13, 2019</item>
+        <item>Presidents Day/Washingtons Birthday/Daisy Gatson Bates Day.Feb 18, 2019</item>
+        <item>Texas Independence Day.Mar 2, 2019</item>
+        <item>Birthday Of Casimir Pulaski.Mar 4, 2019</item>
+        <item>Town Meeting Day. Mar 5, 2019</item>
+        <item>Seward Day/Prince Jonah Kuhio Kalanianaole Day.Mar 25, 2019</item>
+        <item>Cesar Chavez Day.Mar 31, 2019</item>
+        <item>DC Emancipation Day/PatriotsDay.Apr 16, 2019</item>
+        <item>Good Friday.Apr 19, 2019</item>
+        <item>Easter/San Jacinto Day.Apr 21, 2019</item>
+        <item>Arbor Day.Apr 26, 2019</item>
+        <item>Truman Day.May 8, 2019</item>
+        <item>Mothers Day.May 12, 2019</item>
+        <item>Memorial Day.May 27, 2019</item>
+        <item>Jefferson Davis Day.Jun 3, 2019</item>
+        <item>King Kamehameha Day.Jun 11, 2019</item>
+        <item>Fathers Day.Jun 16, 2019</item>
+        <item>Emancipation Day / Juneteenth.Jun 19, 2019</item>
+        <item>West Virginia Day.Jun 20, 2019</item>
+        <item>Independence Day.Jul 4, 2019</item>
+        <item>Pioneer Day.Jul 24, 2019</item>
+        <item>Victory Day.Aug 12, 2019</item>
+        <item>Bennington Battle Day/Statehood.Aug 16, 2019</item>
+        <item>Lyndon B Johnson Day.Aug 27, 2019</item>
+        <item>Labor Day.Sep 2, 2019</item>
+        <item>Columbus Day/Native American Day.Oct 14, 2019</item>
+        <item>Alaska Day.Oct 18, 2019</item>
+        <item>Nevada Day.Oct 25, 2019</item>
+        <item>Veterans Day.Nov 11, 2019</item>
+        <item>Thanksgiving Day.Nov 28, 2019</item>
+        <item>Christmas Day.Dec 25, 2019</item>
+        <item>New Year Day.Jan 1, 2020</item>
+        <item>New Year Day.Jan 2, 2020</item>
+        <item>Epiphany.Jan 6, 2020</item>
+        <item>Lee-Jackson Day.Jan 17, 2020</item>
+        <item>Robert E Lee Birthday.Jan 19, 2020</item>
+        <item>Martin Luther King, Jr Day/Inauguration Day/Civil Rights Day.Jan 20, 2020</item>
+        <item>Rosa Parks Day.Feb 4, 2020</item>
+        <item>Lincoln Birthday.Feb 12, 2020</item>
+        <item>Presidents Day/Washingtons Birthday/Daisy Gatson Bates Day.Feb 17, 2020</item>
+        <item>Mardi Gras Day.Feb 25, 2020</item>
+        <item>Texas Independence Day.Mar 2, 2020</item>
+        <item>Town Meeting Day. Mar 3, 2020</item>
+        <item>Seward Day/Prince Jonah Kuhio Kalanianaole Day.Mar 30, 2020</item>
+        <item>Cesar Chavez Day.Mar 31, 2020</item>
+        <item>Good Friday.Apr 10, 2020</item>
+        <item>DC Emancipation Day.Apr 16, 2020</item>
+        <item>PatriotsDay.Apr 20, 2020</item>
+        <item>San Jacinto Day.Apr 21, 2020</item>
+        <item>Arbor Day.Apr 24, 2020</item>
+        <item>Truman Day.May 8, 2020</item>
+        <item>Mothers Day.May 10, 2020</item>
+        <item>Memorial Day.May 25, 2020</item>
+        <item>Jefferson Davis Day.Jun 1, 2020</item>
+        <item>King Kamehameha Day.Jun 11, 2020</item>
+        <item>Fathers Day.Jun 21, 2020</item>
+        <item>Emancipation Day / Juneteenth.Jun 19, 2020</item>
+        <item>West Virginia Day.Jun 20, 2020</item>
+        <item>Pioneer Day.Jul 24, 2020</item>
+        <item>Independence Day.Jul 4, 2020</item>
+        <item>Victory Day.Aug 10, 2020</item>
+        <item>Bennington Battle Day.Aug 16, 2020</item>
+        <item>Statehood Day.Aug 21, 2020</item>
+        <item>Lyndon B Johnson Day.Aug 27, 2020</item>
+        <item>Labor Day.Sep 7, 2020</item>
+        <item>Columbus Day/Native American Day.Oct 12, 2020</item>
+        <item>Alaska Day.Oct 18, 2020</item>
+        <item>Nevada Day.Oct 30, 2020</item>
+        <item>Veterans Day.Nov 11, 2020</item>
+        <item>Thanksgiving Day.Nov 26, 2020</item>
+        <item>Christmas Day.Dec 25, 2020</item>
+        <item>New Year Day.Jan 1, 2021</item>
+        <item>Epiphany.Jan 6, 2021</item>
+        <item>Lee-Jackson Day.Jan 15, 2021</item>
+        <item>Martin Luther King.Jan 18, 2021</item>
+        <item>Jr Day/Robert E Lee Birthday.Jan 19, 2021</item>
+        <item>Inauguration Day.Jan 20, 2021</item>
+        <item>Rosa Parks Day.Feb 4, 2021</item>
+        <item>Lincoln Birthday.Feb 12, 2021</item>
+        <item>Presidents Day/Washingtons Birthday/Daisy Gatson Bates Day.Feb 15, 2021</item>
+        <item>Mardi Gras Day.Feb 16, 2021</item>
+        <item>Birthday Of Casimir Pulaski.Mar 1, 2021</item>
+        <item>Texas Independence Day/Town Meeting Day.Mar 2, 2021</item>
+        <item>Prince Jonah Kuhio Kalanianaole Day.Mar 26, 2021</item>
+        <item>Seward Day.Mar 29, 2021</item>
+        <item>Cesar Chavez Day.Mar 31, 2021</item>
+        <item>Good Friday.Apr 2, 2021</item>
+        <item>Easter.Apr 4, 2021</item>
+        <item>DC Emancipation Day.Apr 16, 2021</item>
+        <item>PatriotsDay Day.Apr 19, 2021</item>
+        <item>San Jacinto Day.Apr 21, 2021</item>
+        <item>Arbor Day.Apr 30, 2021</item>
+        <item>Truman Day.May 7, 2021</item>
+        <item>Mothers Day.May 9, 2021</item>
+        <item>Memorial Day/Jefferson Davis Day.May 31, 2021</item>
+        <item>Statehood Day.Jun 1, 2021</item>
+        <item>King Kamehameha Day.Jun 11, 2021</item>
+        <item>Emancipation Day / Juneteenth.Jun 19, 2021</item>
+        <item>Fathers Day.Jun 20, 2021</item>
+        <item>West Virginia Day.Jun 20, 2021</item>
+        <item>Independence Day.Jul 4, 2021</item>
+        <item>Pioneer Day.Jul 24, 2021</item>
+        <item>Victory Day.Aug 9, 2021</item>
+        <item>Bennington Battle Day.Aug 16, 2021</item>
+        <item>Lyndon B Johnson Day.Aug 27, 2021</item>
+        <item>Labor Day.Sep 6, 2021</item>
+        <item>Columbus Day/Native American Day.Oct 11, 2021</item>
+        <item>Alaska Day.Oct 18, 2021</item>
+        <item>Nevada Day.Oct 29, 2021</item>
+        <item>Veterans Day.Nov 11, 2021</item>
+        <item>Thanksgiving Day.Nov 25, 2021</item>
+        <item>Christmas Day.Dec 25, 2021</item>
+        <item>New Year Day.Jan 1, 2022</item>
+        <item>Epiphany.Jan 6, 2022</item>
+        <item>Lee-Jackson Day.Jan 14, 2022</item>
+        <item>Martin Luther King/Robert E Lee Birthday.Jan 17, 2022</item>
+        <item>Inauguration Day.Jan 20, 2022</item>
+        <item>Rosa Parks Day.Feb 4, 2022</item>
+        <item>Lincoln Birthday.Feb 11, 2022</item>
+        <item>Presidents Day/Washingtons Birthday/Daisy Gatson Bates Day.Feb 21, 2022</item>
+        <item>Mardi Gras Day.Mar 1, 2022</item>
+        <item>Texas Independence Day/Town Meeting Day.Mar 2, 2022</item>
+        <item>Birthday Of Casimir Pulaski.Mar 7, 2022</item>
+        <item>Prince Jonah Kuhio Kalanianaole Day.Mar 25, 2022</item>
+        <item>Seward Day.Mar 28, 2022</item>
+        <item>Cesar Chavez Day.Mar 31, 2022</item>
+        <item>Good Friday.Apr 15, 2022</item>
+        <item>DC Emancipation Day.Apr 16, 2022</item>
+        <item>Easter.Apr 17, 2022</item>
+        <item>PatriotsDay Day.Apr 18, 2022</item>
+        <item>San Jacinto Day.Apr 21, 2022</item>
+        <item>Arbor Day.Apr 29, 2022</item>
+        <item>Truman Day/Mothers Day.May 8, 2022</item>
+        <item>Memorial Day.May 10, 2022</item>
+        <item>Statehood Day.Jun 1, 2022</item>
+        <item>Jefferson Davis Day.Jun 6, 2022</item>
+        <item>King Kamehameha Day.Jun 11, 2022</item>
+        <item>Emancipation Day / Juneteenth/Fathers Day.Jun 19, 2022</item>
+        <item>West Virginia Day.Jun 20, 2022</item>
+        <item>Independence Day.Jul 4, 2022</item>
+        <item>Pioneer Day.Jul 24, 2022</item>
+        <item>Victory Day.Aug 8, 2022</item>
+        <item>Bennington Battle Day.Aug 16, 2022</item>
+        <item>Lyndon B Johnson Day.Aug 27, 2022</item>
+        <item>Labor Day.Sep 5, 2022</item>
+        <item>Columbus Day/Native American Day.Oct 10, 2022</item>
+        <item>Alaska Day.Oct 18, 2022</item>
+        <item>Nevada Day.Oct 28, 2022</item>
+        <item>Veterans Day.Nov 11, 2022</item>
+        <item>Thanksgiving Day.Nov 24, 2022</item>
+        <item>Christmas Day.Dec 25, 2022</item>
+        <item>New Years Day.Janu 1, 2023</item>
+        <item>Martin Luther King Day.Jan 16, 2023</item>
+        <item>Belly Laugh Day.Jan 24, 2023</item>
+        <item>Groundhog Day.Feb 2, 2023</item>
+        <item>Lincolns Birthday.Feb 12, 2023</item>
+        <item>Valentines Day.Febr 14, 2023</item>
+        <item>Presidents Day and Washingtons Birthday.Feb 20, 2023</item>
+        <item>Mardi Gras Carnival.Feb 21, 2023</item>
+        <item>Daylight Saving.Mar 12, 2023</item>
+        <item>St Patricks Day.Mar 17, 2023</item>
+        <item>April Fools Day.Apr 1, 2023</item>
+        <item>Good Friday.Apr 7, 2023</item>
+        <item>Easter.Apr 9, 2023</item>
+        <item>Easter Monday.Apr 10, 2023</item>
+        <item>Earth Day.Apr 22, 2023</item>
+        <item>Cinco de Mayo.May 5, 2023</item>
+        <item>Mothers Day.May 14, 2023</item>
+        <item>Armed Forces Day.May 20, 2023</item>
+        <item>Pentecost.May 28, 2023</item>
+        <item>Memorial Day.May 29, 2023</item>
+        <item>Pentecost Monday.May 29, 2023</item>
+        <item>Flag Day.Jun 14, 2023</item>
+        <item>Fathers Day.Jun 18, 2023</item>
+        <item>Independence Day.Jul 4, 2023</item>
+        <item>Parents Day.Jul 23, 2023</item>
+        <item>Labor Day.Sep 4, 2023</item>
+        <item>Grandparents Day.Sep 10, 2023</item>
+        <item>Patriot Day or September 11th.Sep 11, 2023</item>
+        <item>Stepfamily Day.Sep 16, 2023</item>
+        <item>Citizenship Day.Sep 17, 2023</item>
+        <item>Native American Day.Sep 22, 2023</item>
+        <item>Columbus Day.Oct 9, 2023</item>
+        <item>Bosss Day.Oct 16, 2023</item>
+        <item>Sweetest Day.Oct 21, 2023</item>
+        <item>Halloween.Oct 31, 2023</item>
+        <item>Daylight Saving.Nov 5, 2023</item>
+        <item>Veterans Day.Nov 11, 2023</item>
+        <item>Thanksgiving.Nov 23, 2023</item>
+        <item>Black Friday.Nov 24, 2023</item>
+        <item>Cyber Monday.Nov 27, 2023</item>
+        <item>Pearl Harbor Remembrance Day.Dec 7, 2023</item>
+        <item>Christmas Day.Dec 25, 2023</item>
+        <item>New Years Eve.Dec 31, 2023</item>
+    </array>
+    <array name="InternationalHolidays">
+        <item>Global Family Day.1 January</item>
+        <item>World Braille Day.4 January</item>
+        <item>World Hindi Day.10 January</item>
+        <item>Army Day.15 January</item>
+        <item>International Day of Education.24 January</item>
+        <item>Day of Commemoration in Memory of the Victims of the Holocaust.27 January</item>
+        <item>Martyrs Day.30 January</item>
+        <item>World Wetland Day.2 February</item>
+        <item>World Cancer Day.4 February</item>
+        <item>Day of Zero Tolerance to Female Genital Mutilation.6 February</item>
+        <item>World Pulses Day/National De-worming Day.7 February</item>
+        <item>Day of Women and Girls in Science.11 February</item>
+        <item>World Radio Day.13 February</item>
+        <item>Valentine Day.14 February</item>
+        <item>World Day of Social Justice.20 February</item>
+        <item>Mother Language Day.21 February</item>
+        <item>Central Excise Day.24 February</item>
+        <item>World NGO Day.27 February</item>
+        <item>National Science Day/Rare Disease Day.28 February</item>
+        <item>Zero Discrimination Day .1 March</item>
+        <item>World Wildlife Day .3 March</item>
+        <item>International Womens Day .8 March</item>
+        <item>Day of Happiness/French Language Day .20 March</item>
+        <item>World Poetry Day/International Day of Forests/World Down Syndrome Day/International
+            Day of Nowruz/International Day for the Elimination of Racial Discrimination .21 March
+        </item>
+        <item>World Water Day .22 March</item>
+        <item>World Meteorological Day .23 March</item>
+        <item>World Tuberculosis Day/World TB Day .24 March</item>
+        <item>Remembrance of the Victims of Slavery and the Transatlantic Slave Trade .25 March
+        </item>
+        <item>World Theater Day .27 March</item>
+        <item>World Autism Awareness Day .2 April</item>
+        <item>Mine Awareness and Assistance in Mine Action .4 April</item>
+        <item>Sport for Development and Peace.6 April</item>
+        <item>World Health Day/Reflection on the Genocide in Rwanda.7 April</item>
+        <item>Day of Human Space Flight .12 April</item>
+        <item>World Chagas Disease Day .14 April</item>
+        <item>Chinese Language Day .20 April</item>
+        <item>World Creativity and Innovation Day .21 April</item>
+        <item>Mother Earth Day .22 April</item>
+        <item>World Book and Copyright Day/English Language Day/Spanish Language Day/International
+            Girls in ICT Day .23 April
+        </item>
+        <item>Mother Earth Day.24 April</item>
+        <item>World Maleria Day.25 April</item>
+        <item>Chernobyl Disaster Remembrance Day/World Intellectual Property Day.26 April</item>
+        <item>World Veterinary Day.27 April</item>
+        <item>World Day for Safety and Health at Work Day.28 April</item>
+        <item>Intenational Dance Day/Day of Remembrance for all Victims of Chemical Warfare .28
+            April
+        </item>
+        <item>Jazz Day.30 April</item>
+        <item>International Labour Day.1 May</item>
+        <item>World Tuna Day.2 May</item>
+        <item>World Press Freedom Day.3 May</item>
+        <item>International Firefighters Day/Coal Miners Day.4 May</item>
+        <item>World Athletics Day.7 May</item>
+        <item>World Red Cross Day/World Thalassaemia Day.8 May</item>
+        <item>World Migratory Bird Day.9 May</item>
+        <item>National Technology Day.11 May</item>
+        <item>International Nurses Day.12 May</item>
+        <item>International Day of Family.15 May</item>
+        <item>World Telecommunication and Information Society Day/world Hypertension Day.17 May
+        </item>
+        <item>International Museum Day/World AIDS Vaccine Day.18 May</item>
+        <item>World Bee Day.20 May</item>
+        <item>World Anti-Terrorism Day/World Day for Cultural Diversity for Dialogue and Development
+            .21 May
+        </item>
+        <item>Day for Biological Diversity.22 May</item>
+        <item>Day to End Obstetric Fistula.23 May</item>
+        <item>CommomWealth Day.24 May</item>
+        <item>Day of UN Peacekeepers .29 May</item>
+        <item>World No-Tobacco Day.31 May</item>
+        <item>Global Day of Parents.1 June</item>
+        <item>World Bycycle Day.3 June</item>
+        <item>Day of Innocent Children Victims of Aggression .4 June</item>
+        <item>World Environment Day.5 June</item>
+        <item>World Food Safety Day.7 June</item>
+        <item>World Oceans Day/World Brain Tumour Day.8 June</item>
+        <item>Anti-Child Labour Day.12 June</item>
+        <item>Albinism Awareness Day.13 June</item>
+        <item>World Blood Donor Day .14 June</item>
+        <item>World Elder Abuse Awareness Day/World Wind Day.15 June</item>
+        <item>Day of Family Remittances .16 June</item>
+        <item>World Day to Combat Desertification and Drought .17 June</item>
+        <item>Sustainable Gastronomy Day .18 June</item>
+        <item>Day for the Elimination of Sexual Violence in Conflict .19 June</item>
+        <item>World Refugee Day .20 June</item>
+        <item>Day of Yoga .21 June</item>
+        <item>United Nations Public Service Day/International Widows Day .23 June</item>
+        <item>Day of the Seafarer .25 June</item>
+        <item>against Drug Abuse and Illicit Trafficking/Support of Victims of Torture.26 June
+        </item>
+        <item>Enterprises Day .27 June</item>
+        <item>Day of the Tropics .29 June</item>
+        <item>Asteroid Day/Parliamentarism Day .30 June</item>
+        <item>Doctors Day .1 July</item>
+        <item>World Zoonoses Day .6 July</item>
+        <item>World Population Day .11 July</item>
+        <item>World Youth Skills Day .15 July</item>
+        <item>World Day for International Justice .17 July</item>
+        <item>Nelson Mandela Day .18 July</item>
+        <item>World Hepatitis Day.28 July</item>
+        <item>Day of Friendship/World Day against Trafficking in Persons.30 July</item>
+        <item>Day of the Worlds Indigenous Peoples.9 August</item>
+        <item>International Youth Day .12 August</item>
+        <item>World Humanitarian Day/Photography Day .19 August</item>
+        <item>International Day of Remembrance and Tribute to the Victims of Terrorism .21 August
+        </item>
+        <item>Remembrance of the Slave Trade and Its Abolition .23 August</item>
+        <item>Day against Nuclear Tests/National Sports Day .29 August</item>
+        <item>Day of the Victims of Enforced Disappearances .30 August</item>
+        <item>International Day of Charity .5 September</item>
+        <item>International Literacy Day .8 September</item>
+        <item>World Suicide Prevention Day .10 September</item>
+        <item>United Nations Day for South-South Cooperation .12 September</item>
+        <item>Hindi Diwas .14 September</item>
+        <item>Engineers Day/International Day of Democracy .15 September</item>
+        <item>World Ozone Day/Day for the Preservation of the Ozone Layer .16 September</item>
+        <item>Alzheimers Day/Day of Peace .21 September</item>
+        <item>Rose Day(Welfare of Cancer patients) .22 September</item>
+        <item>Day Of Sign Languages .23 September</item>
+        <item>Day of the Deaf/World Contaception Day/Day for the Total Elimination of Nuclear
+            Weapons .26 September
+        </item>
+        <item>World Tourism Day/World Maritime Day.27 September</item>
+        <item>World Rabies Day/International Day for Universal Access to Information .28 September
+        </item>
+        <item>World Heart Day.29 September</item>
+        <item>International Translation Day.30 September</item>
+        <item>Day of Older Persons.1 Octomber</item>
+        <item>Day of Non-Violence.2 Octomber</item>
+        <item>World Animal welfare Day .4 Octomber</item>
+        <item>World Teachers Day.5 Octomber</item>
+        <item>Indian Air Force Day.8 Octomber</item>
+        <item>World PostOffice Day .9 Octomber</item>
+        <item>World Mental Health Day.10 Octomber</item>
+        <item>Day of the Girl Child.11 Octomber</item>
+        <item>Day for Disaster Reduction .13 Octomber</item>
+        <item>World Student Day/Day of Rural Women .15 Octomber</item>
+        <item>World Food Day.16 Octomber</item>
+        <item>Day for the Eradication of Poverty .17 Octomber</item>
+        <item>World Statistics Day.20 Octomber</item>
+        <item>United Nations Day/World Devlopment Information Day.24 Octomber</item>
+        <item>World Day for Audiovisual Heritage.27 Octomber</item>
+        <item>World Thrift Day.30 Octomber</item>
+        <item>World Cities Day/National Unity Day.31 Octomber</item>
+        <item>Day to End Impunity for Crimes against Journalists.2 November</item>
+        <item>World Tsunami Awareness Day .5 November</item>
+        <item>Day for Preventing the Exploitation of the Environment in War and Armed Conflict .6
+            November
+        </item>
+        <item>World Science Day for Peace and Development.10 November</item>
+        <item>World Diabetes Day/Childrens Day.14 November</item>
+        <item>Day for Tolerance.16 November</item>
+        <item>World Toilet Day.19 November</item>
+        <item>Africa Industrialization Day/Universal Children’s Day .20 November</item>
+        <item>World Television Day.21 November</item>
+        <item>Day for the Elimination of Violence against Women.25 November</item>
+        <item>Day of Solidarity with the Palestinian People.29 November</item>
+        <item>World AIDS Day.1 December</item>
+        <item>Day for the Abolition of Slavery .2 December</item>
+        <item>Day of Persons with Disabilities .3 December</item>
+        <item>Volunteer Day for Economic and Social Development.5 December</item>
+        <item>Civil Aviation Day .7 December</item>
+        <item>Anti-Corruption Day .9 December</item>
+        <item>Human Rights Day .10 December</item>
+        <item>Mountain Day.11 December</item>
+        <item>Day of Neutrality/International Universal Health Coverage Day.12 December</item>
+        <item>Migrants Day/Arabic Language Day.18 December</item>
+        <item>Human Solidarity Day.20 December</item>
+    </array>
+    <array name="StokeHolidays">
+        <item>New Year Day.Jan 1, 2019</item>
+        <item>Martin Luther King, Jr Day.Jan 21, 2019</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 18, 2019</item>
+        <item>Good Friday.Apr 19, 2019</item>
+        <item>Memorial Day.May 27, 2019</item>
+        <item>Independence Day.Jul 4, 2019</item>
+        <item>Labor Day.Sep 2, 2019</item>
+        <item>Thanksgiving Day.Nov 28, 2019</item>
+        <item>Christmas Day.Dec 25, 2019</item>
+        <item>New Year Day.Jan 1, 2020</item>
+        <item>Martin Luther King, Jr Day.Jan 20, 2020</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 17, 2020</item>
+        <item>Good Friday.Apr 10, 2019</item>
+        <item>Memorial Day.May 25, 2020</item>
+        <item>Independence Day.Jul 4, 2020</item>
+        <item>Labor Day.Sep 7, 2020</item>
+        <item>Thanksgiving Day.Nov 27, 2020</item>
+        <item>Christmas Day.Dec 25, 2020</item>
+        <item>New Year Day.Jan 1, 2021</item>
+        <item>Martin Luther King, Jr Day.Jan 18, 2021</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 15, 2021</item>
+        <item>Good Friday.Apr 2, 2021</item>
+        <item>Memorial Day.May 31, 2021</item>
+        <item>Independence Day.Jul 4, 2021</item>
+        <item>Labor Day.Sep 6, 2021</item>
+        <item>Thanksgiving Day.Nov 25, 2021</item>
+        <item>Christmas Day.Dec 25, 2021</item>
+        <item>New Year Day.Jan 1, 2022</item>
+        <item>Martin Luther King, Jr Day.Jan 17, 2022</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 21, 2022</item>
+        <item>Good Friday.Apr 15, 2022</item>
+        <item>Memorial Day.May 30, 2022</item>
+        <item>Independence Day.Jul 4, 2022</item>
+        <item>Labor Day.Sep 5, 2022</item>
+        <item>Thanksgiving Day.Nov 24, 2022</item>
+        <item>Christmas Day.Dec 25, 2022</item>
+        <item>New Years Day.Jan 2, 2023</item>
+        <item>Martin Luther King Jr Day.Jan 16, 2023</item>
+        <item>Presidents Day/Washingtons Birthday.Feb 21, 2023</item>
+        <item>Memorial Day.May 29, 2023</item>
+        <item>Independence Day.Jul 4, 2023</item>
+        <item>Labor Day.Sept 4, 2023</item>
+        <item>Veterans Day.Nov 10, 2023</item>
+        <item>Thanksgiving.Nov 23, 2023</item>
+        <item>Christmas Day.Dec 25, 2023</item>
+    </array>
+    <array name="custom_months">
+        <item>JAN</item>
+        <item>Feb</item>
+        <item>MARCH</item>
+        <item>April</item>
+        <item>MAY</item>
+        <item>June</item>
+        <item>JULY</item>
+        <item>Aug</item>
+        <item>SEPT</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>DEC</item>
+    </array>
+    <array name="custom_weekdays">
+        <item>Su</item>
+        <item>M</item>
+        <item>Tu</item>
+        <item>W</item>
+        <item>Th</item>
+        <item>F</item>
+        <item>Sa</item>
+    </array>
+    <array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </array>
+    <array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </array>
+    <array name="repeat">
+        <item>Once</item>
+        <item>Weekly</item>
+    </array>
+    <array name="spinner_list_item_array">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+    </array>
+    <array name="yearList">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </array>
+</resources>

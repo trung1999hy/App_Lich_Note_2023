@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_note_page_title_icon"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:textSize="18dp"
+                            android:textColor="#2a2a36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="Add Note"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/roboto_bold" />
+
+                        <ImageView
+                            android:id="@+id/btnClose"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_close_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="0.08">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp">
+
+                        <EditText
+                            android:textColor="#000000"
+                            android:textColorHint="#b3b3b3"
+                            android:id="@+id/edNoteTitle"
+                            android:background="@drawable/round_corner_view"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="Write Note Title"
+                            android:backgroundTint="#f1f1f1" />
+
+                        <EditText
+                            android:textColor="#000000"
+                            android:textColorHint="#b3b3b3"
+                            android:gravity="start"
+                            android:id="@+id/edNoteDescription"
+                            android:background="@drawable/round_corner_view"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:hint="Write Note here..."
+                            android:minLines="6"
+                            android:backgroundTint="#f1f1f1" />
+
+                        <Button
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/btnAddNote"
+                            android:background="@drawable/round_corner_view"
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Add Note"
+                            android:backgroundTint="#4c61f9" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

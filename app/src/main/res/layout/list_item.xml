@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/round_corner_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:weightSum="1"
+        android:backgroundTint="#b2f0e4e4">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/rl_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:weightSum="1"
+            android:layout_weight="0.1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45">
+
+                <ImageView
+                    android:id="@+id/flag"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_reminders_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.22">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Year&apos;s Day"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:id="@+id/item_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Sunday" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="#a6a1a1"
+                    android:id="@+id/date"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="January, 1-2018" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

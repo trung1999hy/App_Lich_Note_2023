@@ -1,0 +1,3 @@
+Link    :https://play.google.com/store/apps/details?id=usa.calendar.appcompany
+version :3.0
+Package :usa.calendar.appcompany

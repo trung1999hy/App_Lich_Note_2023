@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--    <style name="AppTheme" parent="@style/AppTheme_Light">-->
+    <!--        <item name="android:windowDisablePreview">true</item>-->
+    <!--        <item name="android:navigationBarColor">@color/navigationBarColor</item>-->
+    <!--&lt;!&ndash;        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>&ndash;&gt;-->
+    <!--        <item name="colorAccent">@color/colorAccent</item>-->
+    <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--        <item name="colorSecondary">@color/colorSecondary</item>-->
+    <!--    </style>-->
+    <!--    <style name="AppTheme_Light" parent="@style/Theme.MaterialComponents.Light.NoActionBar">-->
+    <!--    </style>-->
+
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#ffffff</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+    </style>
+
+    <!--    <item name="android:windowLightStatusBar">true</item>-->
+
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--        <item name="colorAccent">@color/colorAccent</item>-->
+    <!--    </style>-->
+
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">#1e1e1e</item>
+    </style>
+
+    <style name="spinner" parent="@style/Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

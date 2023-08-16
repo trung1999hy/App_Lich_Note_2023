@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/banner1"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:background="#4c61f9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.83">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/btnClose"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ic_close_icon"
+                                    android:layout_centerHorizontal="true"
+                                    app:tint="#ffffff" />
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/btnFestival"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="4dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_festivals_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/btnBankHoliday"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="8dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:src="@drawable/ic_bank_holiday_icon"
+                                        android:backgroundTint="#4c61f9"
+                                        app:tint="#b7c0fd" />
+
+                                    <ImageView
+                                        android:id="@+id/btnPublicHoliday"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="8dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:src="@drawable/ic_public_holiday_icon"
+                                        android:backgroundTint="#4c61f9"
+                                        app:tint="#b7c0fd" />
+
+                                    <ImageView
+                                        android:id="@+id/btnInternationalHoliday"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="8dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:src="@drawable/ic_international_holiday_icon"
+                                        android:backgroundTint="#4c61f9"
+                                        app:tint="#b7c0fd" />
+
+                                    <ImageView
+                                        android:id="@+id/btnFederalHoliday"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="8dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:src="@drawable/ic_federal_holiday_icon"
+                                        android:backgroundTint="#4c61f9"
+                                        app:tint="#b7c0fd" />
+
+                                    <ImageView
+                                        android:id="@+id/btnStockHoliday"
+                                        android:background="@drawable/round_image_selection"
+                                        android:padding="8dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:src="@drawable/ic_stock_exchange_holidays_icon"
+                                        android:backgroundTint="#4c61f9"
+                                        app:tint="#b7c0fd" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="@drawable/one_side_round"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.17">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/selectedHoliday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/ic_festivals_icon"
+                                    app:tint="#e49f22" />
+
+                                <TextView
+                                    android:textSize="16dp"
+                                    android:textColor="#292935"
+                                    android:id="@+id/tvHolidayName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Festival Holiday"
+                                    android:fontFamily="@font/roboto_bold" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rvSpinnerView"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp">
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content">
+
+                                    <Spinner
+                                        android:id="@+id/spYear"
+                                        android:background="@drawable/round_corner_view"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="38dp"
+                                        android:backgroundTint="#e49f22"
+                                        style="@style/spinner" />
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_arrow_drop_down"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentEnd="true" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:padding="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="6dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvHolidayList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

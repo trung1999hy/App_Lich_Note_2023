@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.92">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_all_reminders_icon"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="#2a2a36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="All Reminders"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_bold" />
+
+                    <ImageView
+                        android:id="@+id/btnClose"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_close_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="0.08">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:id="@+id/alarm_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/lin_add_note"
+                            android:divider="@android:color/transparent" />
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:id="@+id/lin_add_note"
+                            android:background="@drawable/round_corner_view"
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:backgroundTint="#e49f22">
+
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:id="@+id/txt_add_remaindar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD REMINDER"
+                                android:fontFamily="@font/roboto_medium" />
+                            <LinearLayout
+                                android:id="@+id/pointView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/bg_radius_18p_white">
+                                <TextView
+                                    android:id="@+id/pointWallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="8dp"
+                                    android:textColor="#000"
+                                    android:paddingRight="3dp"
+                                    android:text="2"/>
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/wallet"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+</LinearLayout>

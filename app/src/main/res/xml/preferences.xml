@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <CheckBoxPreference
+            android:title="Use 24-hour format"
+            android:key="use_24h_pref"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="Week starts on Monday"
+            android:key="week_starts_pref"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications">
+        <RingtonePreference
+            android:name="Alarm"
+            android:title="Alarm sound"
+            android:key="alarm_sound_pref" />
+        <ListPreference
+            android:title="Alarm sound play time"
+            android:key="alarm_play_time_pref"
+            android:defaultValue="60" />
+        <CheckBoxPreference
+            android:title="Vibrate"
+            android:key="vibrate_pref"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
