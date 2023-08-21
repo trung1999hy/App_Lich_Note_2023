@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -54,6 +55,7 @@ public class CalenderActivity extends AppCompatActivity {
     ImageView showNextMonthBut;
     ImageView showPreviousMonthBut;
     TextView point;
+    LinearLayout pointView;
     SharedPreferences spref;
     List<NoteModel> noteModelList = new ArrayList();
     List<EventModel> eventModelList = new ArrayList();
@@ -108,6 +110,7 @@ public class CalenderActivity extends AppCompatActivity {
         this.showPreviousMonthBut = (ImageView) findViewById(R.id.showPreviousMonthBut);
         this.showNextMonthBut = (ImageView) findViewById(R.id.showNextMonthBut);
         this.point = (TextView) findViewById(R.id.pointWallet);
+        this.pointView = (LinearLayout) findViewById(R.id.pointView);
         final CompactCalendarView compactCalendarView = (CompactCalendarView) findViewById(R.id.compactcalendar_view);
         compactCalendarView.setFirstDayOfWeek(1);
         compactCalendarView.setCurrentDate(MainActivity.selectedDate);
@@ -168,6 +171,14 @@ public class CalenderActivity extends AppCompatActivity {
         this.rvToday.setLayoutManager(new LinearLayoutManager(this));
         this.rvToday.setAdapter(this.calenderViewAdapter);
         this.point.setText(App.getInstance().getValueCoin() + "");
+        this.pointView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(getApplicationContext(), PurchaseInAppActivity.class);
+                intent5.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent5);
+            }
+        });
     }
 
     @Override
@@ -240,7 +251,7 @@ public class CalenderActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

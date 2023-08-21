@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     List<EventModel> eventModelList = new ArrayList();
 
     TextView point;
+    LinearLayout pointView;
 
     public Bundle getNonPersonalizedAdsBundle() {
         Bundle bundle = new Bundle();
@@ -134,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         this.btnNoteAdd = (FloatingActionButton) findViewById(R.id.btnNoteAdd);
         this.rvNote = (RecyclerView) findViewById(R.id.rvNote);
         this.point = (TextView) findViewById(R.id.pointWallet);
+        this.pointView = (LinearLayout) findViewById(R.id.pointView) ;
         this.monthText = (TextView) findViewById(R.id.monthText);
         this.showPreviousMonthBut = (ImageView) findViewById(R.id.showPreviousMonthBut);
         this.showNextMonthBut = (ImageView) findViewById(R.id.showNextMonthBut);
@@ -216,6 +218,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         this.point.setText(App.getInstance().getValueCoin() + "");
+        this.pointView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(getApplicationContext(), PurchaseInAppActivity.class);
+                intent5.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent5);
+            }
+        });
     }
 
     public long getEventMilli(String str) {
@@ -256,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
