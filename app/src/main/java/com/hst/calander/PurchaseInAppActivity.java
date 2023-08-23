@@ -8,7 +8,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -45,12 +48,15 @@ public class PurchaseInAppActivity extends AppCompatActivity implements Purchase
     private ImageView imvBack;
     private RecyclerView listData;
 
+    private RelativeLayout noData;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_in_app);
         imvBack = findViewById(R.id.imvBack);
         listData = findViewById(R.id.listData);
+        noData = findViewById(R.id.layoutNoData);
         initViews();
         imvBack.setOnClickListener(v -> {
             onBackPressed();
@@ -87,6 +93,9 @@ public class PurchaseInAppActivity extends AppCompatActivity implements Purchase
                 if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                     showProducts();
                 }
+                else {
+                    handler.postDelayed(() -> noData.setVisibility(View.VISIBLE), 1200);
+                }
             }
 
             @Override
@@ -106,12 +115,21 @@ public class PurchaseInAppActivity extends AppCompatActivity implements Purchase
                 (billingResult, prodDetailsList) -> {
                     // Process the result
                     productDetailsList.clear();
-                    handler.postDelayed(() -> {
-                        productDetailsList.addAll(prodDetailsList);
-                        adapter.setData(this, productDetailsList);
-                        if (prodDetailsList.size() == 0)
-                            Toast.makeText(PurchaseInAppActivity.this, "prodDetailsList, size = 0", Toast.LENGTH_SHORT).show();
-                    }, 2000);
+
+                        handler.postDelayed(() -> {
+                            if (prodDetailsList.size() > 0) {
+                                productDetailsList.addAll(prodDetailsList);
+                                adapter.setData(this, productDetailsList);
+                                if (prodDetailsList.size() == 0)
+                                    Toast.makeText(PurchaseInAppActivity.this, "prodDetailsList, size = 0", Toast.LENGTH_SHORT).show();
+                                noData.setVisibility(View.GONE);
+                            }
+                            else {
+                                noData.setVisibility(View.VISIBLE);
+                            }
+                        }, 2000);
+
+
                 }
         );
     }
