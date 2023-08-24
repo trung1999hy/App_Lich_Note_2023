@@ -38,22 +38,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp">
 
-                        <LinearLayout
-                            android:gravity="center"
+                        <RelativeLayout
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginRight="60dp">
+                            android:layout_height="match_parent">
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:textSize="18dp"
                                 android:textColor="#000000"
                                 android:gravity="center"
-                                android:layout_gravity="center"
+                                android:layout_centerInParent="true"
                                 android:id="@+id/toolbar_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
                                 android:text="@string/app_name"
                                 android:fontFamily="@font/roboto_medium" />
                             <LinearLayout
@@ -61,6 +58,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
                                 android:padding="8dp"
                                 android:background="@drawable/bg_radius_18p_white"
                                 android:clickable="true"
@@ -82,7 +80,7 @@
                                     android:src="@drawable/wallet"
                                     />
                             </LinearLayout>
-                        </LinearLayout>
+                        </RelativeLayout>
                     </androidx.appcompat.widget.Toolbar>
                 </LinearLayout>
 
