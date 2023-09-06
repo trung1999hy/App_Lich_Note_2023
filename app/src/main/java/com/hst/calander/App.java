@@ -35,7 +35,7 @@ public class App extends Application {
         application = this;
         if (!Preference.buildInstance(this.getApplicationContext()).getDefaultListReminder()) {
             DataSource.getInstance(this.getApplicationContext());
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 8; i++) {
                 Alarm alarm = new Alarm(this);
                 alarm.setEnabled(false);
                 alarm.setDate(Calendar.getInstance().getTimeInMillis());
