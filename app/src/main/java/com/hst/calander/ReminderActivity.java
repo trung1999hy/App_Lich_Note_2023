@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,27 +22,20 @@ import com.hst.calander.Alarm.Alarm;
 import com.hst.calander.Alarm.AlarmListAdapter;
 import com.hst.calander.Alarm.EditAlarm;
 import com.hst.calander.Alarm.Preferences;
+import com.hst.calander.Alarm.onClick;
 
 
 public class ReminderActivity extends AppCompatActivity {
     int ads_const;
     ImageView btnClose;
-    LinearLayout lin_add_note;
+
     private ListView mAlarmList;
     private AlarmListAdapter mAlarmListAdapter;
     private Alarm mCurrentAlarm;
     PrefManager prefManager;
     SharedPreferences spref;
-    private AdapterView.OnItemClickListener mListOnItemClickListener = new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
-            Intent intent = new Intent(ReminderActivity.this.getBaseContext(), EditAlarm.class);
-            ReminderActivity reminderActivity = ReminderActivity.this;
-            reminderActivity.mCurrentAlarm = reminderActivity.mAlarmListAdapter.getItem(i);
-            ReminderActivity.this.mCurrentAlarm.toIntent(intent);
-            ReminderActivity.this.startActivityForResult(intent, 1);
-        }
-    };
+    TextView point;
+    LinearLayout viewPoint;
 
     public Bundle getNonPersonalizedAdsBundle() {
         Bundle bundle = new Bundle();
@@ -54,44 +48,45 @@ public class ReminderActivity extends AppCompatActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.activity_reminder);
-
         SharedPreferences sharedPreferences = getSharedPreferences("pref_ads", 0);
         this.spref = sharedPreferences;
         this.ads_const = sharedPreferences.getInt("ads_const", 0);
         PrefManager prefManager = new PrefManager(this);
         this.prefManager = prefManager;
+        this.point = (TextView) findViewById(R.id.pointWallet);
         this.btnClose = (ImageView) findViewById(R.id.btnClose);
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.lin_add_note);
-        this.lin_add_note = linearLayout;
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (App.getInstance().getValueCoin() >= 2) {
-                    App.getInstance().setValueCoin(App.getInstance().getValueCoin() - 2);
-                    Intent intent = new Intent(ReminderActivity.this.getBaseContext(), EditAlarm.class);
-                    ReminderActivity.this.mCurrentAlarm = new Alarm(ReminderActivity.this);
-                    ReminderActivity.this.mCurrentAlarm.toIntent(intent);
-                    ReminderActivity.this.startActivityForResult(intent, 0);
-                }
-                else {
-                    Toast.makeText(ReminderActivity.this, "You need more coin to using this image!", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
+        this.viewPoint = (LinearLayout) findViewById(R.id.pointView);
         this.mAlarmList = (ListView) findViewById(R.id.alarm_list);
         AlarmListAdapter alarmListAdapter = new AlarmListAdapter(this);
+        alarmListAdapter.setOnClickSetUp(new onClick() {
+            @Override
+            public void onClickSetUp(int i, Alarm alarm) {
+                Intent intent = new Intent(ReminderActivity.this.getBaseContext(), EditAlarm.class);
+                ReminderActivity reminderActivity = ReminderActivity.this;
+                reminderActivity.mCurrentAlarm = reminderActivity.mAlarmListAdapter.getItem(i);
+                ReminderActivity.this.mCurrentAlarm.toIntent(intent);
+                ReminderActivity.this.startActivityForResult(intent, 1);
+            }
+        });
         this.mAlarmListAdapter = alarmListAdapter;
         this.mAlarmList.setAdapter((ListAdapter) alarmListAdapter);
-        this.mAlarmList.setOnItemClickListener(this.mListOnItemClickListener);
         registerForContextMenu(this.mAlarmList);
         this.mCurrentAlarm = null;
+        this.viewPoint.setOnClickListener(v -> {
+            ReminderActivity.this.startActivity(new Intent(ReminderActivity.this, PurchaseInAppActivity.class));
+        });
         this.btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ReminderActivity.this.onBackPressed();
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        this.point.setText(String.format("%d", App.getInstance().getValueCoin()));
     }
 
     @Override
@@ -106,7 +101,6 @@ public class ReminderActivity extends AppCompatActivity {
         Log.i("AlarmMe", "AlarmMe.onResume()");
         this.mAlarmListAdapter.updateAlarms();
     }
-
 
     @Override
     public void onActivityResult(int i, int i2, Intent intent) {

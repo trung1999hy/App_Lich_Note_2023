@@ -5,15 +5,22 @@ import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
 
+import com.hst.calander.Alarm.Alarm;
+import com.hst.calander.Alarm.DataSource;
+
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 public class App extends Application {
     private static Preference preference = null;
     private static App application = null;
+
     public static Preference getInstance() {
         if (preference == null) {
             preference = Preference.buildInstance(application);
@@ -21,10 +28,21 @@ public class App extends Application {
         preference.isOpenFirst();
         return preference;
     }
+
     @Override
     public void onCreate() {
         super.onCreate();
         application = this;
+        if (!Preference.buildInstance(this.getApplicationContext()).getDefaultListReminder()) {
+            DataSource.getInstance(this.getApplicationContext());
+            for (int i = 0; i < 10; i++) {
+                Alarm alarm = new Alarm(this);
+                alarm.setEnabled(false);
+                alarm.setDate(Calendar.getInstance().getTimeInMillis());
+                DataSource.add(alarm);
+            }
+            Preference.buildInstance(this.getApplicationContext()).setDefaultListReminder(true);
+        }
     }
 
     public static final String[] REQUIRED_PERMISSIONS = getRequiredPermissions().toArray(new String[0]);

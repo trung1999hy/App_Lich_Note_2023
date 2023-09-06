@@ -17,7 +17,7 @@ public class DataSource {
     private static long mNextId;
     private static final DataSource mDataSource = new DataSource();
     private static Context mContext = null;
-    private static ArrayList<Alarm> mList = null;
+    private static ArrayList<Alarm> mList = new ArrayList<>();
 
     protected DataSource() {
     }

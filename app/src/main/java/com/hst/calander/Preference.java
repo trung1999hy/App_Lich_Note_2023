@@ -11,7 +11,7 @@ public class Preference {
     private String KEY_PREMIUM = "KEY_PREMIUM"; // premium
     private String KEY_TOTAL_COIN = "KEY_TOTAL_COIN"; // coin
     private String IS_OPEN_FIRST = "IS_OPEN_FIRST"; // coin
-
+    private String KEY_DEFAULT = "KEY_DEFAULT";
     public static Preference instance;
 
     public static Preference buildInstance(Context context) {
@@ -36,6 +36,13 @@ public class Preference {
 
     public void setPremium(int value) {
         sharedPreferences.edit().putInt(KEY_PREMIUM, value).apply();
+    }
+
+    public void setDefaultListReminder(Boolean isDefault) {
+        sharedPreferences.edit().putBoolean(KEY_PREMIUM, isDefault).apply();
+    }
+    public boolean getDefaultListReminder() {
+        return  sharedPreferences.getBoolean(KEY_DEFAULT, false);
     }
 
     public int getPremium() {

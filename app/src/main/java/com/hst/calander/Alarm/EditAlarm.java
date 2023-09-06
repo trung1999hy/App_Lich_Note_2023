@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -34,6 +35,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import com.hst.calander.App;
+import com.hst.calander.PurchaseInAppActivity;
 import com.hst.calander.R;
 
 
@@ -126,13 +129,9 @@ public class EditAlarm extends AppCompatActivity {
         setContentView(R.layout.edit2);
 
 
-
 //        AdAdmob adAdmob = new AdAdmob( this);
 //        adAdmob.BannerAd((RelativeLayout) findViewById(R.id.banner), this);
 //        adAdmob.FullscreenAd_Counter(this);
-
-
-
 
 
         this.btnClose = (ImageView) findViewById(R.id.btnClose);
@@ -155,20 +154,58 @@ public class EditAlarm extends AppCompatActivity {
         this.btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                EditAlarm.this.mAlarm.toIntent(intent);
-                EditAlarm.this.setResult(-1, intent);
-                EditAlarm.this.finish();
+                new AlertDialog.Builder(EditAlarm.this)
+                        .setMessage("Are you sure to save minus 2 gold?")
+                        .setTitle("Are you sure save ?").setPositiveButton("oke", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                if (App.getInstance().getValueCoin() >= 2) {
+                                    App.getInstance().setValueCoin(App.getInstance().getValueCoin() - 2);
+                                    Intent intent = new Intent();
+                                    EditAlarm.this.mAlarm.toIntent(intent);
+                                    EditAlarm.this.setResult(-1, intent);
+                                    EditAlarm.this.finish();
+                                    Toast.makeText(EditAlarm.this, "Success",Toast.LENGTH_LONG).show();
+                                }else {
+                                    Intent intent = new Intent(EditAlarm.this, PurchaseInAppActivity.class);
+                                    EditAlarm.this.startActivity(intent);
+                                }
+                            }
+                        })
+                                .
+
+                        setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.dismiss();
+                            }
+                        }).
+
+                        create().
+
+                        show();
+
+
             }
         });
         EditText editText = (EditText) findViewById(R.id.title);
         this.mTitle = editText;
         editText.setTypeface(this.font2);
-        ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(this.mTitle, 1);
-        this.mAlarmEnabled = (CheckBox) findViewById(R.id.alarm_checkbox);
-        this.mOccurence = (Spinner) findViewById(R.id.repeat_spinner);
-        this.mDateButton = (TextView) findViewById(R.id.date_button);
-        this.mTimeButton = (TextView) findViewById(R.id.time_button);
+        ((InputMethodManager)
+
+                getSystemService(Context.INPUT_METHOD_SERVICE)).
+
+                showSoftInput(this.mTitle, 1);
+        this.mAlarmEnabled = (CheckBox)
+
+                findViewById(R.id.alarm_checkbox);
+        this.mOccurence = (Spinner)
+
+                findViewById(R.id.repeat_spinner);
+        this.mDateButton = (TextView)
+
+                findViewById(R.id.date_button);
+        this.mTimeButton = (TextView)
+
+                findViewById(R.id.time_button);
         this.mDateButton.setTypeface(this.font2);
         this.mTimeButton.setTypeface(this.font2);
         this.mTitle.setOnClickListener(new View.OnClickListener() {
@@ -179,8 +216,12 @@ public class EditAlarm extends AppCompatActivity {
         });
         Alarm alarm = new Alarm(this);
         this.mAlarm = alarm;
-        alarm.fromIntent(getIntent());
-        this.mDateTime = new DateTime(this);
+        alarm.fromIntent(
+
+                getIntent());
+        this.mDateTime = new
+
+                DateTime(this);
         this.mTitle.setText(this.mAlarm.getTitle());
         this.mTitle.addTextChangedListener(this.mTitleChangedListener);
         this.mOccurence.setSelection(this.mAlarm.getOccurence());
@@ -195,6 +236,7 @@ public class EditAlarm extends AppCompatActivity {
         this.mDay = this.mCalendar.get(5);
         this.mHour = this.mCalendar.get(11);
         this.mMinute = this.mCalendar.get(12);
+
         updateButtons();
         this.btnClose.setOnClickListener(new View.OnClickListener() {
             @Override

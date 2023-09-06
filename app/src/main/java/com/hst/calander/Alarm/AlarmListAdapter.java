@@ -1,5 +1,6 @@
 package com.hst.calander.Alarm;
 
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.hst.calander.R;
@@ -24,6 +26,8 @@ public class AlarmListAdapter extends BaseAdapter {
     private DataSource mDataSource;
     private DateTime mDateTime;
     private LayoutInflater mInflater;
+    private onClick onClick;
+
 
     @Override
     public long getItemId(int i) {
@@ -39,7 +43,12 @@ public class AlarmListAdapter extends BaseAdapter {
         this.mColorOutdated = this.mContext.getResources().getColor(R.color.alarm_title_outdated);
         this.mColorActive = this.mContext.getResources().getColor(R.color.alarm_title_active);
         this.mAlarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+
         dataSetChanged();
+    }
+
+    public void setOnClickSetUp(onClick onClick) {
+        this.onClick = onClick;
     }
 
     public void save() {
@@ -94,6 +103,7 @@ public class AlarmListAdapter extends BaseAdapter {
             viewHolder = new ViewHolder();
             viewHolder.title = (TextView) view.findViewById(R.id.item_title);
             viewHolder.details = (TextView) view.findViewById(R.id.item_details);
+            viewHolder.button = (Button) view.findViewById(R.id.button);
             view.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) view.getTag();
@@ -102,6 +112,9 @@ public class AlarmListAdapter extends BaseAdapter {
         edit.putInt("reminder_total", DataSource.size());
         edit.commit();
         edit.apply();
+        viewHolder.button.setOnClickListener(v -> {
+            onClick.onClickSetUp(i,alarm);
+        });
         viewHolder.title.setText(alarm.getTitle());
         TextView textView = viewHolder.details;
         StringBuilder sb = new StringBuilder();
@@ -123,6 +136,7 @@ public class AlarmListAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    @SuppressLint("ScheduleExactAlarm")
     private void setAlarm(Alarm alarm) {
         PendingIntent broadcast;
         if (!alarm.getEnabled() || alarm.getOutdated()) {
@@ -157,8 +171,10 @@ public class AlarmListAdapter extends BaseAdapter {
     static class ViewHolder {
         TextView details;
         TextView title;
+        Button button;
 
         ViewHolder() {
         }
     }
 }
+
